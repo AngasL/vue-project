@@ -7,52 +7,47 @@
 </template>
 
 <script>
+import tree from "./components/tree/tree";
+
 export default {
-  name: 'App',
+  name: "App",
   components: {
     tree
   },
-  data(){
-    return{
-      data:data
-    }
+  data() {
+    return {
+      data: data
+    };
   }
-}
+};
 
 var data = {
-  name:"My Tree",
-  children:[
-    {name:'hello'},
-    { name: 'wat' },
+  name: "My Tree",
+  children: [
+    { name: "hello" },
+    { name: "wat" },
     {
-      name: 'child folder',
-       children: [
+      name: "child folder",
+      children: [
         {
-          name: 'child folder',
-          children: [
-            { name: 'hello' },
-            { name: 'wat' }
-          ]
+          name: "child folder",
+          children: [{ name: "hello" }, { name: "wat" }]
         },
-        { name: 'hello' },
-        { name: 'wat' },
+        { name: "hello" },
+        { name: "wat" },
         {
-          name: 'child folder',
-          children: [
-            { name: 'hello' },
-            { name: 'wat' }
-          ]
+          name: "child folder",
+          children: [{ name: "hello" }, { name: "wat" }]
         }
       ]
     }
   ]
-}
-
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
